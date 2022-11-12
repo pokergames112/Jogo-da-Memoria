@@ -35,7 +35,7 @@ body{
 
 }
 .back{ /*Imagem de Fundos das cartas*/
-    background: url("../img/backcards.png");
+    background: url("../img/verso.png");
 }
 
 .back.flipped{      /*Rotação do verso da carta em 180ª*/
