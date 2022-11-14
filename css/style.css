@@ -20,7 +20,7 @@ body{
     width: 200px; /*Largura dos cards*/
     height: 280px;   /*Altura dos cards */
     position: absolute; /*importante para depois fazer a manipulaçãos dos cards usando JavaScript*/
-    border-radius: 10px; /*arredondamento das bordas dos cards*/
+    border-radius: 5px; /*arredondamento das bordas dos cards*/
     border: solid; /*Sugimento das bordas*/
     perspective: 600px;
 }
@@ -29,7 +29,7 @@ body{
     width: 100%; /*Largura de preenchimento */
     height: 100%; /*Altura de preenchimento*/
     position: absolute; /*Para uma melhor manipulação em JavaCript*/
-    border-radius: 10px; /*Borda do preenchimento*/
+    border-radius: 5px; /*Borda do preenchimento*/
     transition: all 1s;
     backface-visibility: hidden;
 
@@ -51,5 +51,5 @@ body{
 }
 
 .card:hover{
-    box-shadow: 1px 1px 10px rgba(241, 3, 3, 0.897); /*Efeito quando passamos o mouse em cima das cartas*/
+    box-shadow: 1px 1px 10px #FFFFFF; /*Efeito quando passamos o mouse em cima das cartas*/
 }
