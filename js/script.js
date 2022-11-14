@@ -1,5 +1,8 @@
 (function(){
     var images = [];
+
+    var flippedCards = [];
+
     for (var i = 0; i < 10; i++){
         var img = {
             src: "img/" + i + ".png",
@@ -10,6 +13,9 @@
     startGame();
 
     function startGame(){
+        flippedCards = [];
+        images = randomSort(images); // função para embaralhar as cartas
+
         var frontFaces = document.getElementsByClassName("front");
         for(var i = 0; i < 10; i++){
             var card = document.querySelector("#card" + i);               // Função que distribui as cartas no container
@@ -24,10 +30,32 @@
         }
     }
 
+    function randomSort(oldArray){
+        //console.log(Math.floor(Math.random()*11)); //gera 1 número aleatório que não chega a 11 ou seja de 0 a 10
+        //var arrTeste = ["Banana", "Morango", "Maca"];
+        //console.log(arrTeste.length);
+
+        var newArray = [];
+
+        while(newArray.length !== oldArray.length){
+            var i = Math.floor(Math.random()*oldArray.length);
+
+            if(newArray.indexOf(oldArray[i]) < 0){
+                newArray.push(oldArray[i]);
+            }
+
+        }
+
+        return newArray;
+    }
+
     function flipCard(){
-        var faces = this.getElementsByClassName("face"); // variável para ser atribuida nos elementos com classe face
+        if (flippedCards.length < 2 ){
+            var faces = this.getElementsByClassName("face"); // variável para ser atribuida nos elementos com classe face
         faces[0].classList.toggle("flipped"); // indice 0 componhe a classe back
         faces[1].classList.toggle("flipped"); // indice 1 componhe a classe front
+        }
+        
         
     }
 }());
