@@ -3,6 +3,8 @@
 
     var flippedCards = [];
 
+    var modalGameover = document.querySelector("#modalGameOver");
+
     for (var i = 0; i < 10; i++){
         var img = {
             src: "img/" + i + ".png",
@@ -52,10 +54,28 @@
     function flipCard(){
         if (flippedCards.length < 2 ){
             var faces = this.getElementsByClassName("face"); // variável para ser atribuida nos elementos com classe face
+
+            if(faces[0].classList.length > 2){
+                return;
+            }
+
         faces[0].classList.toggle("flipped"); // indice 0 componhe a classe back
         faces[1].classList.toggle("flipped"); // indice 1 componhe a classe front
+
+        flippedCards.push(this);
+        } else {
+            flippedCards[0].childNodes[1].classList.toggle("flipped");
+            flippedCards[0].childNodes[3].classList.toggle("flipped");
+            flippedCards[1].childNodes[1].classList.toggle("flipped");
+            flippedCards[1].childNodes[3].classList.toggle("flipped");
+
+            flippedCards = [];
         }
-        
-        
+    
     }
+
+    function gameOver(){
+        modalGameover.style.zIndex = 10;
+    }
+
 }());
