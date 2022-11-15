@@ -8,7 +8,7 @@
     for (var i = 0; i < 10; i++){
         var img = {
             src: "img/" + i + ".png",
-            id: i%5 
+            id: i % 5 
         };
         images.push(img);
     }
