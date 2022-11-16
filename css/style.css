@@ -6,11 +6,12 @@
 body{
     background-color: #0011ff;  /*Cor de Fundo*/
     text-align: center;
+    
 }
 
 #container{ /*Div Id Container*/
-    width: 900px; /*Largura do container*/
-    height: 580px; /*altura do container*/
+    width: 556px; /*Largura do container*/
+    height: 420px; /*altura do container*/
     border: 1px solid #111; /*borda do container*/
     position: relative; /**/
     margin: 5px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
@@ -20,12 +21,13 @@ body{
 }
 .card{ /*Configuração comum para todos os cards*/
     width: 100px; /*Largura dos cards*/
-    height: 200px;   /*Altura dos cards */
+    height: 180px;   /*Altura dos cards */
     position: absolute; /*importante para depois fazer a manipulaçãos dos cards usando JavaScript*/
     border-radius: 5px; /*arredondamento das bordas dos cards*/
     border: solid; /*Sugimento das bordas*/
     perspective: 600px;
 }
+
 
 .face{
     width: 100%; /*Largura de preenchimento */
@@ -71,6 +73,9 @@ body{
 
 #imgGameOver{
     margin-top: 50px;
+    width: 300px;
+    
+
 }
 
 #imgMatchSign{
@@ -80,5 +85,15 @@ body{
     transition-duration: 1.5s;
     opacity: 1;
     z-index: -2;
+}
+
+.card{
+    transition: all 0.3s;
+
+}
+
+.card:hover{
+    transition: 0.3s;
+    transform: scale(1.2);
 }
 

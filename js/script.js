@@ -15,7 +15,9 @@
             id: i % 5 
         };
         images.push(img);
+
     }
+
     startGame();
 
     function startGame(){
@@ -32,8 +34,8 @@
             backFaces[i].classList.remove("flipped", "match");
 
             var card = document.querySelector("#card" + i);               // Função que distribui as cartas no container
-            card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 130 + 5 + "px";
-            card.style.top = i < 5 ? 5 + "px" : 222 + "px"
+            card.style.left = i % 5 === 0 ? 5 + "px" : i % 5 * 110 + 5 + "px";
+            card.style.top = i < 5 ? 5 + "px" : 219 + "px"
 
             card.addEventListener("click", flipCard,false);
 
