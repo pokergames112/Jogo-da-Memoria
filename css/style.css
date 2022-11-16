@@ -9,18 +9,18 @@ body{
 }
 
 #container{ /*Div Id Container*/
-    width: 1056px; /*Largura do container*/
-    height: 590px; /*altura do container*/
+    width: 900px; /*Largura do container*/
+    height: 580px; /*altura do container*/
     border: 1px solid #111; /*borda do container*/
     position: relative; /**/
-    margin: 10px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
+    margin: 5px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
     border-radius: 10px; /*Arrendontamento das bordas*/
     background-color: #00aeffa6; /*Cor de fundo do container*/
         
 }
 .card{ /*Configuração comum para todos os cards*/
-    width: 200px; /*Largura dos cards*/
-    height: 280px;   /*Altura dos cards */
+    width: 100px; /*Largura dos cards*/
+    height: 200px;   /*Altura dos cards */
     position: absolute; /*importante para depois fazer a manipulaçãos dos cards usando JavaScript*/
     border-radius: 5px; /*arredondamento das bordas dos cards*/
     border: solid; /*Sugimento das bordas*/
@@ -81,3 +81,4 @@ body{
     opacity: 1;
     z-index: -2;
 }
+
