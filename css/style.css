@@ -14,7 +14,7 @@ body{
     height: 420px; /*altura do container*/
     border: 1px solid #111; /*borda do container*/
     position: relative; /**/
-    margin: 5px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
+    margin: 90px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
     border-radius: 10px; /*Arrendontamento das bordas*/
     background-color: #00aeffa6; /*Cor de fundo do container*/
         
@@ -95,5 +95,7 @@ body{
 .card:hover{
     transition: 0.3s;
     transform: scale(1.2);
+    width: 200px;
+    height: 280px;
 }
 
