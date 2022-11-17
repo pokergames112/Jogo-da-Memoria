@@ -63,9 +63,9 @@ body{
 }
 
 #modalGameOver{
-    margin-top: -460px;
+    margin-top: -600px;
+    padding-bottom: 100px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5);
     z-index: -2;
 }
 
@@ -80,7 +80,7 @@ body{
     position: relative;
     top: 250px;
     transition-property: top, opacity;
-    transition-duration: 1.5s;
+    transition-duration: 2s;
     opacity: 1;
     z-index: -2;
 }
