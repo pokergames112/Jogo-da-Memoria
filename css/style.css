@@ -97,6 +97,20 @@ body{
     height: 230px;
 }
 
+.main-ata{
+    padding-top: 130px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.main-ata .frase{
+    color: aliceblue;
+    font-size: 20px;
+}
+
 .main-footer{
     padding-top: 130px;
     display: flex;
