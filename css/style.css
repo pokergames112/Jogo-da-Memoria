@@ -100,19 +100,18 @@ body{
 .main-ata{
     padding-top: 130px;
     display: flex;
-    justify-content: left;
-    align-items: left;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 .main-ata .frase{
     color: aliceblue;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .main-footer{
-    padding-top: 130px;
+    padding-top: 30px;
     display: flex;
     justify-content: left;
     align-items: left;
