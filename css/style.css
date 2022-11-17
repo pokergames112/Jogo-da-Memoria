@@ -97,3 +97,34 @@ body{
     height: 230px;
 }
 
+.main-footer{
+    padding-top: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+}
+
+.main-footer .logoGitHub{
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+.main-footer .titleGitHub{
+    color: aliceblue;
+    font-size: 15px;
+}
+
+
+.main-footer .logoli{
+    margin-bottom: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.main-footer .titleli{
+    color: aliceblue;
+    font-size: 15px;
+}
