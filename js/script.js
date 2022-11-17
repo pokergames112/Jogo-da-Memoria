@@ -113,7 +113,7 @@
 
     window.setTimeout(function(){
         gameOver();
-    },1000);
+    },0);
 
     function gameOver(){
         modalGameover.style.zIndex = 10;
