@@ -54,11 +54,7 @@ body{
     transform: rotateY(0deg);
 }
 
-.card:hover{
-    box-shadow: 1px 1px 10px #FFFFFF; /*Efeito quando passamos o mouse em cima das cartas*/
-}
-
-.face.flipped.match{ /*Cartas que combinam ficaram desta cor*/
+.face.flipped.match{ /*card match will stay this color*/
     box-shadow: 0 0 10px #0f0;
 }
 
@@ -86,15 +82,17 @@ body{
 }
 
 .card{
-    transition: all 0.3s;
+    transition: all 0.3s; /*efect card after hover*/
 
 }
 
 .card:hover{
+    box-shadow: 1px 1px 10px #FFFFFF;
     transition: 0.3s;
     transform: scale(1.2);
     width: 140px;
     height: 230px;
+    z-index: 1;
 }
 
 .main-ata{
