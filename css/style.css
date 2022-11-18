@@ -11,7 +11,7 @@ body{
 
 #container{ /*Div Id Container*/
     width: 556px; /*Largura do container*/
-    height: 420px; /*altura do container*/
+    height: 390px; /*altura do container*/
     border: 1px solid #111; /*borda do container*/
     position: relative; /**/
     margin: 70px auto;  /*Distânciamento do topo da página 10 px e distânciamento de largura automatico*/
@@ -74,7 +74,7 @@ body{
 
 #imgMatchSign{
     position: relative;
-    top: 250px;
+    top: 220px;
     transition-property: top, opacity;
     transition-duration: 3s;
     opacity: 1;
@@ -92,7 +92,7 @@ body{
     transform: scale(1.2);
     width: 140px;
     height: 230px;
-    z-index: 1;
+    z-index: 10;
 }
 
 .main-ata{
